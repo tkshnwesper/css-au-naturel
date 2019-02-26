@@ -5,7 +5,7 @@
   "main": "index.jade",
   "scripts": {
     "start": "parcel ./src/index.jade",
-    "build": "parcel ./src/build index.jade"
+    "build": "parcel build ./src/index.jade -d . --no-minify"
   },
   "author": "Saurabh M. Machave",
   "license": "ISC",

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Presentation at UI Unfold about the raw capabilities of CSS over JS",
   "main": "index.jade",
+  "source": {
+    "./style.sass": "./style.sass"
+  },
   "scripts": {
     "start": "parcel ./src/index.jade",
     "build": "parcel build ./src/index.jade -d . --no-minify"

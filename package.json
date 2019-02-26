@@ -1,0 +1,19 @@
+{
+  "name": "css-au-naturel",
+  "version": "1.0.0",
+  "description": "Presentation at UI Unfold about the raw capabilities of CSS over JS",
+  "main": "index.jade",
+  "scripts": {
+    "start": "parcel ./src/index.jade",
+    "build": "parcel ./src/build index.jade"
+  },
+  "author": "Saurabh M. Machave",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {}
+}

@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS: Au Naturel</title>
-    <style>body {
+body {
   background-color: black;
   color: #efefef;
   display: grid;
@@ -50,14 +43,3 @@ input[type='radio'][name='slide-index'][value='1']:checked ~ .slide-1 {
   height: 100%;
   grid-row: 2 / 3;
   grid-column: first / last; }
-
-    </style>
-  </head>
-  <body>
-    <div class="bottom-menu"></div>
-    <input type="radio" name="slide-index" value="0">
-    <div class="slide slide-0">First slide</div>
-    <input type="radio" name="slide-index" value="1">
-    <div class="slide slide-1">Second slide</div>
-  </body>
-</html>

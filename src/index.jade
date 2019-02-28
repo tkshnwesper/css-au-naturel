@@ -8,7 +8,8 @@ html(lang="en")
     link(rel="stylesheet", href="./style.sass")
 
   body
-    div(class="slide-plane") Kitty
     div(class="bottom-menu")
-      div(class="bottom-menu-left-button") Left
-      div(class="bottom-menu-right-button") Right
+    input(type="radio", name="slide-index", value="0")
+    div(class="slide slide-0") First slide
+    input(type="radio", name="slide-index" value="1")
+    div(class="slide slide-1") Second slide

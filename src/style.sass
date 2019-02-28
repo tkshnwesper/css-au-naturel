@@ -2,22 +2,36 @@ body
   background-color: black
   color: #efefef
   display: grid
-  grid-template-rows: 90% 10%
+  grid-template-rows: 95% 5%
+  grid-template-columns: [first] 1fr repeat(2, 20px) 1fr [last]
   height: 100vh
   margin: 0
 
-.slide-plane
+.center-on-both-axes
+  display: grid
+  justify-items: center
+  align-items: center
+
+.slide
+  grid-column: 1 / 6
   grid-row: 1 / 2
 
+@for $i from 0 to 2
+  .slide-#{$i}
+    @extend .center-on-both-axes
+    display: none
+    height: 100%
+  
+  input[type='radio'][name='slide-index'][value='#{$i}']
+    grid-row: 2 / 3
+    grid-column: #{$i + 2} / #{$i + 3}
+
+  input[type='radio'][name='slide-index'][value='#{$i}']:checked ~ .slide-#{$i}
+    display: grid
+
 .bottom-menu
-  background-color: lighten(black, 20%)
+  @extend .center-on-both-axes
+  background-color: lighten(black, 10%)
   height: 100%
   grid-row: 2 / 3
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
-
-  .bottom-menu-left-button
-    grid-column: 1 / 2
-  
-  .bottom-menu-right-button
-    grid-column: 3 / 4
+  grid-column: first / last

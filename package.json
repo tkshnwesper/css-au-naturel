@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "parcel ./src/index.jade",
-    "build": "parcel build ./src/style.sass -d . --no-minify && parcel build ./src/index.jade -d . --no-minify"
+    "build": "parcel build ./src/style.sass --no-minify && parcel build ./src/index.jade -d . --no-minify"
   },
   "author": "Saurabh M. Machave",
   "license": "ISC",

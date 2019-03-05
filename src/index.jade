@@ -5,13 +5,10 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title CSS: Au Naturel
-    style
-      include ../dist/style.css
-    
-
+    link(href="./style.sass", rel="stylesheet")
   body
     div(class="bottom-menu")
-    input(type="radio", name="slide-index", value="0")
-    div(class="slide slide-0") First slide
-    input(type="radio", name="slide-index" value="1")
-    div(class="slide slide-1") Second slide
+    input(type="radio", name="slide-index", value=0 checked)
+    div(class="slide-0") Slide 1
+    input(type="radio", name="slide-index", value=1)
+    div(class="slide-1") Slide 2

@@ -8,11 +8,13 @@
   },
   "scripts": {
     "start": "parcel ./src/index.jade",
-    "build": "parcel build ./src/style.sass --no-minify && parcel build ./src/index.jade -d . --no-minify"
+    "prebuild": "del ./*.css",
+    "build": "parcel build ./src/index.jade -d . --no-minify"
   },
   "author": "Saurabh M. Machave",
   "license": "ISC",
   "devDependencies": {
+    "del-cli": "^1.1.0",
     "node-sass": "^4.11.0",
     "pug": "^2.0.3"
   },

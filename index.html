@@ -5,59 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS: Au Naturel</title>
-    <style>body {
-  background-color: black;
-  color: #efefef;
-  display: grid;
-  grid-template-rows: 95% 5%;
-  grid-template-columns: [first] 1fr repeat(2, 20px) 1fr [last];
-  height: 100vh;
-  margin: 0; }
-
-.center-on-both-axes, .slide-0, .slide-1, .bottom-menu {
-  display: grid;
-  justify-items: center;
-  align-items: center; }
-
-.slide {
-  grid-column: 1 / 6;
-  grid-row: 1 / 2; }
-
-.slide-0 {
-  display: none;
-  height: 100%; }
-
-input[type='radio'][name='slide-index'][value='0'] {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3; }
-
-input[type='radio'][name='slide-index'][value='0']:checked ~ .slide-0 {
-  display: grid; }
-
-.slide-1 {
-  display: none;
-  height: 100%; }
-
-input[type='radio'][name='slide-index'][value='1'] {
-  grid-row: 2 / 3;
-  grid-column: 3 / 4; }
-
-input[type='radio'][name='slide-index'][value='1']:checked ~ .slide-1 {
-  display: grid; }
-
-.bottom-menu {
-  background-color: #1a1a1a;
-  height: 100%;
-  grid-row: 2 / 3;
-  grid-column: first / last; }
-
-    </style>
+    <link href="/style.0286d63e.css" rel="stylesheet">
   </head>
   <body>
     <div class="bottom-menu"></div>
-    <input type="radio" name="slide-index" value="0">
-    <div class="slide slide-0">First slide</div>
+    <input type="radio" name="slide-index" value="0" checked="">
+    <div class="slide-0">Slide 1</div>
     <input type="radio" name="slide-index" value="1">
-    <div class="slide slide-1">Second slide</div>
+    <div class="slide-1">Slide 2</div>
   </body>
 </html>

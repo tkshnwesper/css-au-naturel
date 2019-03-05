@@ -1,3 +1,5 @@
+$number-of-rows: 2
+
 body
   background-color: black
   color: #efefef
@@ -12,13 +14,11 @@ body
   justify-items: center
   align-items: center
 
-.slide
-  grid-column: 1 / 6
-  grid-row: 1 / 2
-
-@for $i from 0 to 2
+@for $i from 0 to $number-of-rows
   .slide-#{$i}
     @extend .center-on-both-axes
+    grid-column: first / last
+    grid-row: 1 / 2
     display: none
     height: 100%
   

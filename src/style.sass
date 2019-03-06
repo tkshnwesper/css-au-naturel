@@ -1,11 +1,11 @@
-$number-of-rows: 2
+$number-of-slides: 3
 
 body
   background-color: black
   color: #efefef
   display: grid
   grid-template-rows: 95% 5%
-  grid-template-columns: [first] 1fr repeat(2, 20px) 1fr [last]
+  grid-template-columns: [first] 1fr repeat($number-of-slides, 20px) 1fr [last]
   height: 100vh
   margin: 0
 
@@ -14,13 +14,13 @@ body
   justify-items: center
   align-items: center
 
-@for $i from 0 to $number-of-rows
+@for $i from 0 to $number-of-slides
   .slide-#{$i}
     @extend .center-on-both-axes
     grid-column: first / last
     grid-row: 1 / 2
-    display: none
     height: 100%
+    display: none
   
   input[type='radio'][name='slide-index'][value='#{$i}']
     grid-row: 2 / 3

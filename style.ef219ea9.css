@@ -3,11 +3,11 @@ body {
   color: #efefef;
   display: grid;
   grid-template-rows: 95% 5%;
-  grid-template-columns: [first] 1fr repeat(2, 20px) 1fr [last];
+  grid-template-columns: [first] 1fr repeat(3, 20px) 1fr [last];
   height: 100vh;
   margin: 0; }
 
-.center-on-both-axes, .slide-0, .slide-1, .bottom-menu {
+.center-on-both-axes, .slide-0, .slide-1, .slide-2, .bottom-menu {
   display: grid;
   justify-items: center;
   align-items: center; }
@@ -15,8 +15,8 @@ body {
 .slide-0 {
   grid-column: first / last;
   grid-row: 1 / 2;
-  display: none;
-  height: 100%; }
+  height: 100%;
+  display: none; }
 
 input[type='radio'][name='slide-index'][value='0'] {
   grid-row: 2 / 3;
@@ -28,8 +28,8 @@ input[type='radio'][name='slide-index'][value='0']:checked ~ .slide-0 {
 .slide-1 {
   grid-column: first / last;
   grid-row: 1 / 2;
-  display: none;
-  height: 100%; }
+  height: 100%;
+  display: none; }
 
 input[type='radio'][name='slide-index'][value='1'] {
   grid-row: 2 / 3;
@@ -38,8 +38,24 @@ input[type='radio'][name='slide-index'][value='1'] {
 input[type='radio'][name='slide-index'][value='1']:checked ~ .slide-1 {
   display: grid; }
 
+.slide-2 {
+  grid-column: first / last;
+  grid-row: 1 / 2;
+  height: 100%;
+  display: none; }
+
+input[type='radio'][name='slide-index'][value='2'] {
+  grid-row: 2 / 3;
+  grid-column: 4 / 5; }
+
+input[type='radio'][name='slide-index'][value='2']:checked ~ .slide-2 {
+  display: grid; }
+
 .bottom-menu {
   background-color: #1a1a1a;
   height: 100%;
   grid-row: 2 / 3;
   grid-column: first / last; }
+
+
+/*# sourceMappingURL=/style.ef219ea9.css.map */

@@ -57,5 +57,10 @@ input[type='radio'][name='slide-index'][value='2']:checked ~ .slide-2 {
   grid-row: 2 / 3;
   grid-column: first / last; }
 
+.github-ribbon {
+  position: fixed;
+  top: 0;
+  right: 0; }
 
-/*# sourceMappingURL=/style.ef219ea9.css.map */
+
+/*# sourceMappingURL=/style.85fa5635.css.map */

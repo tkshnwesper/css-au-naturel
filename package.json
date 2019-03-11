@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "parcel ./src/index.jade",
-    "prebuild": "del ./*.css",
+    "prebuild": "del ./*.css ./*.css.map",
     "build": "parcel build ./src/index.jade -d . --no-minify"
   },
   "author": "Saurabh M. Machave",
